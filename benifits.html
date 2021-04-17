@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>DataPatrol</title>
+<link rel="shortcut icon" type="image/png" href="images/logo.png"/>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+	
+ <script>
+      if(screen.width<600){
+        window.location.replace("mobile.html");
+      }
+ </script>
+	
+<style>
+ .center {
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ width: 50%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  
+}
+
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+	
+@font-face {
+    font-family: 'Cairo-Light';
+    src: url('fonts/Cairo-Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Cairo-SemiBold';
+    src: url('fonts/Cairo-SemiBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Cairo-Regular';
+    src: url('fonts/Cairo-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Cairo-Bold';
+    src: url('fonts/Cairo-Bold.ttf') format('truetype');
+}
+
+ .br {
+        display: block;
+        margin-bottom:-1.5%;
+}
+	
+p { margin:0 } 
+	
+#footer {
+   position:absolute;
+   bottom:0;
+   width: 99%;
+   height:16%;   
+   
+}
+	
+	
+table {
+  font-family: Cairo-Light;
+  border-collapse: collapse;
+  margin-left:16%;
+  width:50%;
+  height:30%
+}
+
+td, th {
+border: none;
+	text-align: left;
+  font-size: 12px;
+}
+	
+	
+</style>
+
+
+</head>
+
+<body style=" background: url('images/background.png')  no-repeat center fixed;background-size: cover;">
+	
+	<iframe id="frame" src="contact.html" title="contact us" style="width: 40%;height: 550px;border-color: transparent;position: absolute;overflow: hidden;left: 33%;top:100px;z-index: 3;background-color: rgba(230,230,230,1)"></iframe>
+	<script>
+		document.getElementById("frame").style.display="none";
+         function trigger(){
+            
+            if(document.getElementById("frame").style.display=="none"){
+              
+              document.getElementById("frame").style.display="block";
+   
+            }
+            else if (document.getElementById("frame").style.display=="block"){
+                document.getElementById("frame").style.display="none";
+               
+            }
+           
+		 }
+    </script>
+	
+	<a href="index.html"> <img src="images/main.png" alt="DataPatrol Logo" class="center" style="width: 18%; position:relative"/> </a>
+	
+	<hr style="color: #EE316E; height: 3px; width: 70%; background-color: #EE316E; border-color: transparent">
+	
+<div class="row" style=" display: block;
+ margin-left: 24%;
+ margin-right: auto;">
+  
+    <a href="about.html"><img src="images/about.png" alt="About" onMouseOver="this.src='images/about-focused.png';" onMouseOut="this.src='images/about.png';" style="width: 15%; margin-right: 25pt; margin-top: 5pt"></a>
+	
+    <a href="solutions.html"><img src="images/solutions.png" alt="Solutions" onMouseOver="this.src='images/solutions-focused.png';" onMouseOut="this.src='images/solutions.png';" style="width:15%; margin-right: 25pt; margin-top: 5pt"></a>
+	
+    <a href="benifits.html"><img src="images/benifits-focused.png" alt="Benifits" onMouseOver="this.src='images/benifits.png';" onMouseOut="this.src='images/benifits-focused.png';" style="width:15%; margin-right: 25pt; margin-top: 5pt"></a>
+	
+    <a href="system.html"><img src="images/system.png" alt="System" onMouseOver="this.src='images/system-focused.png';" onMouseOut="this.src='images/system.png';" style="width:15%; margin-right: 25pt; margin-top: 5pt"></a>
+  
+</div>
+	
+<div>
+	
+	<h1 style="font-family: Cairo-Bold;color: #28245C; margin-left:16%;margin-top:4%;text-align: left;line-height: 95%;">BENEFITS</h1>
+		
+	<table>
+	  <tr>
+        <td style="text-align: center;"><img src="images/1.png" style="height: 50px; width: 50px; margin-top:-30px"/></td>
+        <td style="width:55%">IDENTIFY <strong style="font-weight: 900">OWNERSHIP</strong> OF YOUR DATA <br/><span class="br">By applying digital watermarks on the screens, you make a statement that any data belongs to the company only.</span><br/></td>
+        <td style="text-align: center;"><img src="images/Watermark_Laptop.png" style="height: 50px; width: 90px;"/></td>
+      </tr>
+  
+	  <tr>
+        <td style="text-align: center"><img src="images/2.png" style="height: 50px; width: 50px; margin-top:-30px"/></td>
+        <td style="width:55%"><strong style="font-weight: 900">FORENSICS</strong><br/><span class="br">Metadata information woll appear on all the screen, so you can track and invistigate any publicly shared information.</span><br/></td>
+        <td style="text-align: center"><img src="images/fingerPrint.png" style="height: 50px; width: 50px;"/></td>
+      </tr>
+  
+	  <tr>
+        <td style="text-align: center"><img src="images/3.png" style="height: 50px; width: 50px; margin-top:-30px"/></td>
+        <td style="width:55%"><strong style="font-weight: 900">ALERT</strong><br/><span class="br">Having permanent watermarks on the screens, you assure and alert all insiders that these data are confidential, and any exfiltration will be tracked.</span><br/></td>
+        <td style="text-align: center;"><img src="images/unauth.png" style="height:50px; width: 50px;"/></td>
+     </tr>
+  
+	  <tr>
+        <td style="text-align: center"><img src="images/4.png" style="height: 50px; width: 50px; "/></td>
+        <td style="width:55%"><strong style="font-weight: 900">COMPLIANCE</strong><br/><span class="br">Utilizing the AntiCopy feature which forces Data Entries to write genuine content rather than copying it.</span></td>
+        <td style="text-align: center"><img src="images/reliable.png" style="height: 50px; width: 90px;"/></td>
+		</tr>
+  
+  </table>
+	
+	
+
+</div>
+
+<div id="footer">
+	
+	<img id="contact" onclick="trigger()"  src="images/contact.png" alt="ContactUs" style="width: 100px; margin-left:78%;" />
+	
+	<hr style="color: #EE316E; height: 3px; width: 70%; background-color: rgba(230,230,230,1); border-color: transparent;">
+	
+	<p id="PAR" style="color:#EE316E;border-color: transparent;margin-left:16%;font-family:Cairo-Regular;font-size: 14px;">
+	<a id="linkedin" href="https://www.linkedin.com/company/datapatrol-co"><img src="images/LinkedIn.png" alt="1" style="width: 30px; float: right; margin-right: 19%;" /></a>
+	<a id="letter" href="mailto:info@datapatrol.com"><img src="images/letter.png" alt="Letter" style="width: 40px;height: 28px; float: right; margin-right: 8px" /></a>
+	©2021 DataPatrol all rights reserved
+	</p>
+		
+</div> 
+	
+
+	
+</body>
+</html>
