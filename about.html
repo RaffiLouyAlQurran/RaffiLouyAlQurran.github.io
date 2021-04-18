@@ -11,6 +11,12 @@
       if(screen.width<600){
         window.location.replace("mobile.html");
       }
+	  
+	  var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) {
+      return p.toString() === "[object SafariRemoteNotification]";
+      })
+	  (!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+	  document.body.fontSize(0.7em);
  </script>
 	
 <style>
@@ -72,10 +78,6 @@ p { margin:0 }
    bottom:0;
    width: 99%;
    height:16%;      
-}
-
-@media (max-width: 2560px) and (min-width: 1600px) {
-font-size 0.7em;
 }
 	
 </style>
