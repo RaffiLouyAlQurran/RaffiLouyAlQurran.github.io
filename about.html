@@ -12,10 +12,6 @@
         window.location.replace("mobile.html");
       }
 	  
-	  if(navigator.userAgent.indexOf("Safari") != -1)
-    {
-        object.style.fontSize = "smaller";
-    }
  </script>
 	
 <style>
@@ -79,6 +75,10 @@ p { margin:0 }
    height:16%;      
 }
 	
+body {
+    -webkit-text-size-adjust: 100%;
+}	
+
 </style>
 	
 
